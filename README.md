@@ -25,7 +25,7 @@ There are two primary components to this project, each in a separate directory.
 * `proto/` The protocol definition. The protocol adheres to the protobuf
   specification. It should be easily parsable by any protobuf library.
 
-* `resume-gen-markdown/` A command line tool that takes as input an encoded
+* `gen-markdown/` A command line tool that takes as input an encoded
   résumé buffer and outputs the text in markdown.
 
 Proto

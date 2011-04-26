@@ -3,6 +3,11 @@
 # to modify the configurable parameters
 #
 
+-include config.make
+
+# if PREFIX has not been defined, set it to /usr/local
+PREFIX ?= /usr/local
+
 # if PROTO_PREFIX has been defined, use it to find the headers, libraries, and
 # binary protoc executable.
 ifdef $(PROTO_PREFIX)
@@ -19,11 +24,12 @@ endif
 CXX := "c++"
 GXX := "g++"
 PERL := perl
+INSTALL := install
 
 CXXFLAGS := -g -Wall -I. $(PROTOCXXFLAGS) $(CXXFLAGS)
 LDFLAGS := $(PROTOLDFLAGS) $(LDFLAGS)
 
-EXE = resume-gen-markdown/main
+EXE = resume-gen-markdown
 
 PROTOS := $(shell find . -name "*.proto" | tr '\n' ' ')
 PROTOSRCS := $(PROTOS:%.proto=%.pb.cc)
@@ -49,7 +55,9 @@ $(EXE) : $(OBJS)
 	@$(PERL) -i -pe 's|$(*F).o|$*.o|' $@
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
-resume-gen-markdown/main.o : resume-gen-markdown/main.cc $(PROTOHDRS)
+# TODO: This rule is the same as the above. Without it, main.cc uses the built
+# in compilation rule.
+gen-markdown/main.o : gen-markdown/main.cc $(PROTOHDRS)
 	@$(GXX) $(CXXFLAGS) -MM $< > $@
 	@$(PERL) -i -pe 's|$(*F).o|$*.o|' $@
 	$(CXX) $(CXXFLAGS) -c $< -o $@
@@ -57,3 +65,8 @@ resume-gen-markdown/main.o : resume-gen-markdown/main.cc $(PROTOHDRS)
 
 %.pb.cc %.pb.h : %.proto
 	$(PROTOC) -Iproto --cpp_out=proto proto/*.proto 
+
+.PHONY : install
+install: $(EXE)
+	mkdir -p $(PREFIX)/bin
+	$(INSTALL) $(EXE) $(PREFIX)/bin/$(EXE)

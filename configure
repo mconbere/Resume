@@ -23,8 +23,8 @@ def main(argv, env):
     
     if (options.prefix):
         make.write("PREFIX := " + options.prefix + "\n")
-    if (options.protoc_prefix):
-        make.write("PROTOC_PREFIX := " + options.protoc_prefix + "\n")
+    if (options.proto_prefix):
+        make.write("PROTO_PREFIX := " + options.proto_prefix + "\n")
     if ("CXXFLAGS" in env):
         make.write("CXXFLAGS := " + env["CXXFLAGS"] + " $(CXXFLAGS)\n")
     if ("LDFLAGS" in env):
