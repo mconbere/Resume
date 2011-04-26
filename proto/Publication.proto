@@ -1,0 +1,12 @@
+package	com.github.mconbere;
+
+import "Date.proto";
+
+message Publication {
+    required string title = 1;
+    optional Date date = 2;
+    optional string url = 3;
+    repeated string author = 4;
+    optional string journal = 5;
+    repeated string note = 6;
+}

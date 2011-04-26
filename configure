@@ -1,0 +1,39 @@
+#!/usr/bin/env python
+#
+# A simple configure script that sets up the configurable parameters of the
+# Makefile.
+#
+
+def main(argv, env):
+    from optparse import OptionParser, OptionGroup
+    
+    parser = OptionParser()
+    
+    installation = OptionGroup(parser, "Installation directories")
+    installation.add_option("--prefix", metavar="PREFIX", help="install files in PREFIX")
+    
+    libraries = OptionGroup(parser, "Library locations")
+    libraries.add_option("--proto-prefix", metavar="PROTO_PREFIX", help="use the protobuf library installed in PROTO_PREFIX")
+    
+    parser.add_option_group(installation)
+    parser.add_option_group(libraries)
+    (options, args) = parser.parse_args(argv)
+    
+    make = open("config.make", "w")
+    
+    if (options.prefix):
+        make.write("PREFIX := " + options.prefix + "\n")
+    if (options.protoc_prefix):
+        make.write("PROTOC_PREFIX := " + options.protoc_prefix + "\n")
+    if ("CXXFLAGS" in env):
+        make.write("CXXFLAGS := " + env["CXXFLAGS"] + " $(CXXFLAGS)\n")
+    if ("LDFLAGS" in env):
+        make.write("LDFLAGS := " + env["LDFLAGS"] + " $(CXXFLAGS)\n")
+    
+    make.close()
+    
+    return 0
+
+if __name__ == '__main__':
+    import sys,os
+    sys.exit(main(sys.argv[1:], os.environ))

@@ -1,0 +1,21 @@
+/**
+ * Education.proto -- A simple Protocol Buffer detailing time spent at an
+ * educational institute for inclusion in a resume.
+ */
+
+package com.github.mconbere;
+
+import "Address.proto";
+import "DateRange.proto";
+
+/**
+ * An Education message representing time spent at an educational institute.
+ * Each note, if any, is presented as a bulleted list of accomplishments.
+ */
+message Education {
+    required string institute = 1;
+    optional Address address = 2;
+    optional string degree = 3;
+    optional DateRange date_range = 4;
+    repeated string note = 5;
+}

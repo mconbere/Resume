@@ -1,0 +1,33 @@
+/**
+ * Date.proto -- A simple Protocol Buffer detailing a calendar date for
+ * inclusion in a resume.
+ */
+
+package com.github.mconbere;
+
+/**
+ * The Date message representing a calendar date. A date is represented by an
+ * optional year, month, and day. The format in which this information is
+ * displayed is undefined. A date containing a day without a year is most likely
+ * meaningless.
+ */
+message Date {
+    enum Month {
+        JANUARY = 0;
+        FEBRUARY = 1;
+        MARCH = 2;
+        APRIL = 3;
+        MAY = 4;
+        JUNE = 5;
+        JULY = 6;
+        AUGUST = 7;
+        SEPTEMBER = 8;
+        OCTOBER = 9;
+        NOVEMBER = 10;
+        DECEMBER = 11;
+    }
+
+    optional int32 year = 1;
+    optional Month month = 2;
+    optional uint32 day = 3;
+}

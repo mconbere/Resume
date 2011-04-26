@@ -1,0 +1,22 @@
+/**
+ * Employment.proto -- A simple Protocol Buffer detailing time spent as an
+ * employee of a company for inclusion in a resume.
+ */
+
+package	com.github.mconbere;
+
+import "Address.proto";
+import "DateRange.proto";
+
+/**
+ * An Employment message representing time spent as an employee of a company.
+ * Each note, if any, is presented as a bulleted list of accomplishments.
+ */
+message Employment {
+    required string company = 1;
+    optional string title = 2;
+    optional Address address = 3;
+    optional string website = 4;
+    optional DateRange date_range = 5;
+    repeated string note = 6;
+}

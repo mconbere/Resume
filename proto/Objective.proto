@@ -1,0 +1,12 @@
+/**
+ * Objective.proto -- A simple Protocol Buffer detailing the contents of the
+ * Objective section of a Resume.
+ */
+
+package	com.github.mconbere;
+
+/** A Resume objective. */
+message Objective {
+    optional string title = 1 [default = "Objective"];
+    required string contents = 2;
+}
