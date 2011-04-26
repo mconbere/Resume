@@ -1,4 +1,4 @@
-Résumé Binary Protocol
+R√©sum√© Binary Protocol
 ======================
 
 Author: Morgan Conbere  
@@ -8,14 +8,14 @@ Purpose
 -------
 
 In a former life, I spent a very long time tweaking the exact layout of my
-résumé, which was written in a very fragile LaTeX class. I enjoyed having the
+r√©sum√©, which was written in a very fragile LaTeX class. I enjoyed having the
 precise layout control that this method provided, but since then I have not
 spent as much time worrying about formatting text for printing.
 
 Now I spend far more time thinking about how to format data for parsing. I
 thought that as a method of screening future potential employers, I would
-provide my résumé in a clearly defined format. Thus I present a well-defined
-protocol detailing my résumé, and the requisite tools to parse such a résumé.
+provide my r√©sum√© in a clearly defined format. Thus I present a well-defined
+protocol detailing my r√©sum√©, and the requisite tools to parse such a r√©sum√©.
 
 Components
 ----------
@@ -26,7 +26,7 @@ There are two primary components to this project, each in a separate directory.
   specification. It should be easily parsable by any protobuf library.
 
 * `resume-gen-markdown/` A command line tool that takes as input an encoded
-  résumé buffer and outputs the text in markdown.
+  r√©sum√© buffer and outputs the text in markdown.
 
 Proto
 -----
@@ -36,7 +36,7 @@ The protocol is documented inline. A good starting point is proto/Resume.proto.
 Writing binary protobuf by hand would be an unpleasant endeavor. I instead have
 been taking advantage of the text format that protobuf allows. It is not well
 documented, but is simple enough to understand once you see an example. Here is
-a simple résumé:
+a simple r√©sum√©:
 
     name : "Morgan A. Conbere"
     address : {
@@ -61,7 +61,7 @@ protoc. For example:
 Resume-gen-markdown
 -------------------
 
-Binary résumé buffers can be turned into nicely human readable documents in one
+Binary r√©sum√© buffers can be turned into nicely human readable documents in one
 of two ways. First, it is possible to convert a binary buffer back into the
 textual format:
 
