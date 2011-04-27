@@ -20,13 +20,19 @@ protocol detailing my résumé, and the requisite tools to parse such a résumé
 Components
 ----------
 
-There are two primary components to this project, each in a separate directory.
+There are three primary components to this project, each in a separate
+directory.
 
 * `proto/` The protocol definition. The protocol adheres to the protobuf
   specification. It should be easily parsable by any protobuf library.
 
 * `gen-markdown/` A command line tool that takes as input an encoded
   résumé buffer and outputs the text in markdown.
+
+* `mconbere/` An example résumé to inspect. The top level Makefile contains
+  rules to turn the example textual protocol file into a binary protocol file
+  as well as transforming it into Markdown. To build the Markdown example, run
+ `make mconbere/mconbere.md`.
 
 Proto
 -----
