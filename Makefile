@@ -52,7 +52,7 @@ clean :
 	-rm -f $(OBJS) $(DEPS) $(PROTOSRCS) $(PROTOHDRS) $(EXE)
 
 $(EXE) : $(OBJS)
-	$(CXX) $(LDFLAGS) $+ -o $@ 
+	$(CXX) $(LDFLAGS) $^ -o $@ 
 
 %.o : %.cc $(PROTOHDRS)
 	@$(GXX) $(CXXFLAGS) -MM $< > $@
@@ -71,7 +71,7 @@ gen-markdown/main.o : gen-markdown/main.cc $(PROTOHDRS)
 	$(PROTOC) -Iproto --cpp_out=proto proto/*.proto 
 
 # As an example, add a rule to compile a sample resume text file into markdown
-$(EXAMPLE_PB) : $(EXAMPLE_PTXT)
+$(EXAMPLE_PB) : $(EXAMPLE_PTXT) $(PROTOS)
 	$(PROTOC) --encode=com.github.mconbere.Resume -Iproto proto/*.proto < $< > $@
 
 $(EXAMPLE_MD) : $(EXAMPLE_PB) $(EXE)
