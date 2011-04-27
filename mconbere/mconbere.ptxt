@@ -105,11 +105,39 @@ employment : {
 project : {
     title : "OpenCV: Open Computer Vision Library"
     role : "Contributor"
+    date_range : {
+        began : {
+            year : 2007
+            month : MAY
+        }
+        ended : {
+            year : 2008
+            month : DECEMBER
+        }
+    }
+
+    note : "Wrote Autotools script to produce a universal binary framework"
+    note : "Ported image loading and saving to Mac OS X technologies"
+    note : "Used libraries to promote educational robotics"
 }
 
 project : {
     title : "MacSweeper: A Minesweeper clone for OS X"
     role : "Creator"
+    website : "http://code.google.com/p/macsweeper/"
+    date_range : {
+        began : {
+            year : 2007
+            month : JUNE
+        }
+        ended : {
+            year : 2009
+            month : OCTOBER
+        }
+    }
+
+    note : "Designed and implemented Minesweeper as a method of learning Objective-C and Cocoa"
+    note : "Maintained as an open source project"
 }
 
 publication : {
@@ -118,7 +146,6 @@ publication : {
     author : "Zachary Dodds"
     journal : "AAAI 2007"
     url : "http://robotics.cs.brown.edu/aaai07/materials/hmc_paper.pdf"
-    
 }
 
 publication : {
