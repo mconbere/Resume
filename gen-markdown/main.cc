@@ -1,3 +1,7 @@
+//
+// main.cc -- Executable entry point for the application resume-gen-markdown
+//
+
 #include "proto/Resume.pb.h"
 
 #include <vector>
@@ -24,14 +28,13 @@ int main(int argc, char **argv) {
     }
     
     if (!parsed) {
-        cerr << "Failed to parse input." << endl;
-        cerr << resume.InitializationErrorString() << endl;
+        cerr << "Failed to parse input. Error in section: " << resume.InitializationErrorString() << endl;
         return EXIT_FAILURE;
     }
     
     generateMarkdown(resume);
     
-    return 0;
+    return EXIT_SUCCESS;
 }
 
 // Resume constants
@@ -39,6 +42,8 @@ static const string EducationTitle = "Education";
 static const string EmploymentTitle = "Employment";
 static const string ProjectsTitle = "Projects";
 static const string PublicationsTitle = "Publications";
+static const string CurrentTime = "Present";
+static const string ListEnder = "and";
 
 void generateMarkdown(Resume &resume) {
     // Markdown constants
@@ -138,7 +143,7 @@ void generateMarkdown(Resume &resume) {
             
             for (int j = 0; j < publication.author_size(); j++) {
                 cout << publication.author(j);
-                if (j + 2 == publication.author_size()) cout << " and ";
+                if (j + 2 == publication.author_size()) cout << " " << ListEnder << " ";
                 else if (j + 1 != publication.author_size()) cout << ", ";
             }
             cout << BreakLine << endl;
@@ -216,8 +221,8 @@ string dateString(const Date &date) {
 
 string dateRangeString(const DateRange &range) {
     string result;
-    if (range.has_began()) result += dateString(range.began()) + " Ð ";
-    if (!range.has_ended()) result += " Present";
+    if (range.has_began()) result += dateString(range.began()) + " \u2013 ";
+    if (!range.has_ended()) result += " " + CurrentTime;
     else result += dateString(range.ended());
     return result;
 }
