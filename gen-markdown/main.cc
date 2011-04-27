@@ -101,8 +101,8 @@ void generateMarkdown(Resume &resume) {
             const Employment &employment = resume.employment(i);
             cout << Bold << employment.company() << Bold << BreakLine << endl;
             if (employment.has_title()) cout << employment.title() << BreakLine << endl;
-            if (employment.has_website()) cout << Code << employment.website() << Code << BreakLine << endl;
             if (employment.has_date_range()) cout << dateRangeString(employment.date_range()) << BreakLine << endl;
+            if (employment.has_website()) cout << Code << employment.website() << Code << BreakLine << endl;
 
             cout << endl;
             for (int j = 0; j < employment.note_size(); j++) {
@@ -121,8 +121,8 @@ void generateMarkdown(Resume &resume) {
             const Project &project = resume.project(i);
             cout << Bold << project.title() << Bold << BreakLine << endl;
             if (project.has_role()) cout << project.role() << BreakLine << endl;
-            if (project.has_website()) cout << Code << project.website() << Code << BreakLine << endl;
             if (project.has_date_range()) cout << dateRangeString(project.date_range()) << BreakLine << endl;
+            if (project.has_website()) cout << Code << project.website() << Code << BreakLine << endl;
             
             cout << endl;
             for (int j = 0; j < project.note_size(); j++) {
@@ -147,8 +147,8 @@ void generateMarkdown(Resume &resume) {
                 else if (j + 1 != publication.author_size()) cout << ", ";
             }
             cout << BreakLine << endl;
-            if (publication.has_date()) cout << dateString(publication.date()) << BreakLine << endl;
 
+            if (publication.has_date()) cout << dateString(publication.date()) << BreakLine << endl;
             if (publication.has_url()) cout << Code << publication.url() << Code << BreakLine << endl;
 
             cout << endl;
