@@ -39,8 +39,7 @@ employment : {
         }
     }
 
-    note : "Influential in the release of popular Comics iOS application"
-    note : "Updated an inherited codebase to a heavily multithreaded reliable architecture"
+    note : "Maintained and added features to the popular Comics iOS application"
     note : "As part of a 4 member team designed and implemented a complete overhaul of the application"
 }
 
