@@ -1,0 +1,137 @@
+/**
+ * Resume.proto -- A simple Protocol Buffer detailing the contents of a Resume.
+ */
+
+package com.github.mconbere;
+
+/**
+ * The Date message representing a calendar date. A date is represented by an
+ * optional year, month, and day. The format in which this information is
+ * displayed is undefined. A date containing a day without a year is most likely
+ * meaningless.
+ */
+message Date {
+    enum Month {
+        JANUARY = 0;
+        FEBRUARY = 1;
+        MARCH = 2;
+        APRIL = 3;
+        MAY = 4;
+        JUNE = 5;
+        JULY = 6;
+        AUGUST = 7;
+        SEPTEMBER = 8;
+        OCTOBER = 9;
+        NOVEMBER = 10;
+        DECEMBER = 11;
+    }
+
+    optional int32 year = 1;
+    optional Month month = 2;
+    optional uint32 day = 3;
+}
+
+/**
+ * The DateRange message representing a range of calendar dates. The date range
+ * is represented by a beginning date and an ending date. If the ending date is
+ * omitted, the ending date is assumed to be the present. If only the ending
+ * date is present, the date range will be displayed as a single date.
+ */
+message DateRange {
+    optional Date began = 1;
+    optional Date ended = 2;
+}
+
+/**
+ * The main Resume container for an individual. If a repeated section does not
+ * have any elements, the header will not be displayed. Any strings should
+ * be UTF-8 strings formatted as they are expected to be displayed in the
+ * resume. Rich text formatting is not supported, and should be handled by
+ * any translation layer that turns the resume buffer into formatted text.
+ */
+message Resume {
+    /**
+     * The Address message representing street address. The address is composed of
+     * an ordered list of strings. No assumptions about the content of the address
+     * are made. The address may be displayed with each string on a separate line,
+     * or it may be displayed on a single line with each string separated by a
+     * comma.
+     */
+    message Address {
+        repeated string line = 1;
+    }
+
+    /**
+     * An Education message representing time spent at an educational institute.
+     * Each note, if any, is presented as a bulleted list of accomplishments.
+     */
+    message Education {
+        required string institute = 1;
+        optional Address address = 2;
+        optional string degree = 3;
+        optional DateRange date_range = 4;
+        repeated string note = 5;
+    }
+
+    /**
+     * An Employment message representing time spent as an employee of a company.
+     * Each note, if any, is presented as a bulleted list of accomplishments.
+     */
+    message Employment {
+        required string company = 1;
+        optional string title = 2;
+        optional Address address = 3;
+        optional string website = 4;
+        optional DateRange date_range = 5;
+        repeated string note = 6;
+    }
+
+    /**
+     * A Objective message representing a resume objective.
+     */
+    message Objective {
+        optional string title = 1 [default = "Objective"];
+        required string contents = 2;
+    }
+
+    /**
+     * A Project message representing a project worked on outside of employment.
+     * Each note, if any, is presented as a bulleted list of accomplishments.
+     */
+    message Project {
+        required string title = 1;
+        optional string role = 2;
+        optional string website = 3;
+        optional DateRange date_range = 4;
+        repeated string note = 5;
+    }
+
+    /**
+     * A Publication message representing a single published work with multiple
+     * authors.
+     */
+    message Publication {
+        required string title = 1;
+        optional Date date = 2;
+        optional string url = 3;
+        repeated string author = 4;
+        optional string journal = 5;
+        repeated string note = 6;
+    }
+
+    required string name = 1;
+    optional Address address = 2;
+    optional string email_address = 3;
+    optional string phone_number = 4;
+    optional string website = 5;
+
+    optional Objective objective = 6;
+
+    repeated Education education = 7;
+    
+    repeated Employment employment = 8;
+
+    repeated Project project = 9;
+
+    repeated Publication publication = 10;
+}
