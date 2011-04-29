@@ -26,7 +26,7 @@ directory.
 * `proto/` The protocol definition. The protocol adheres to the protobuf
   specification. It should be easily parsable by any protobuf library.
 
-* `gen-markdown/` A command line tool that takes as input an encoded
+* `src/cpp/` A command line tool that takes as input an encoded
   résumé buffer and outputs the text in markdown.
 
 * `mconbere/` An example résumé to inspect. The top level Makefile contains
