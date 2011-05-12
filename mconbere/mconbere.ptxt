@@ -104,7 +104,7 @@ employment: {
 project: {
     title: "Protobuf Résumé"
     role: "Creator"
-    website: "htto://github.com/mconbere/Resume"
+    website: "http://github.com/mconbere/Resume"
     date_range: {
         began: {
             year: 2011
