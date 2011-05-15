@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Protobuf Résumé</title>
+    
+    <link type="text/css" rel="stylesheet" href="main.css" />
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.form.js"></script>
+    <script type="text/javascript" src="showdown.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var showUpload = function(show) {
+          if (show) $('.form').show();
+          else $('.form').hide();
+        }
+        
+        var params = urlParameters();
+        
+        var insertHtml = function(html) {
+          $('#resumeInsertionPoint').html("<div class=\"resume\"><div class=\"body\">" + html + "</div></div>").hide().fadeIn(500);
+        }
+        
+        if (params.url) {
+          showUpload(false);
+          requestMarkdownFromUrl(params.url, insertHtml);
+        }
+        
+        $('#uploadForm').ajaxForm(function() {
+          showUpload(true);
+          requestMarkdownFromFile(document.getElementById('inputFile').files[0], insertHtml);
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="body">
+        <div id="resumeInsertionPoint"></div>
+
+        <div class="form">
+          <h1>Protobuf Résumé</h1>
+          <p>Submit a protobuf encoded résumé below to convert it to HTML. The résumé may either be encoded in the binary or text format.</p>
+          <form id="uploadForm">
+            <input id="inputFile" type="file" class="file" /><br />
+            <input type="submit" class="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+      <div id="footer">
+        <p class="left">By <a href="http://morgan.conbere.org/foo">Morgan Conbere</a>, 2011</p>
+        <p class="right"><a href="http://github.com/mconbere/Resume/">See the source on Github</a></p>
+      </div>
+    </div>
+  </body>
+</html>
