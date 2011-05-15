@@ -81,3 +81,6 @@ $(EXAMPLE_MD) : $(EXAMPLE_PB) $(EXE)
 install: $(EXE)
 	mkdir -p $(PREFIX)/bin
 	$(INSTALL) $(EXE) $(PREFIX)/bin/$(EXE)
+
+protobuf-resume/src/com/github/mconbere/ResumeProto.java: $(PROTOS)
+	$(PROTOC) --java_out=protobuf-resume/src proto/ResumeProto.proto
