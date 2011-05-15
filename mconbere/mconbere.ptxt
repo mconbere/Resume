@@ -1,158 +1,173 @@
-name : "Morgan A. Conbere"
-address : {
-    line : "3425 19th St. Apt. 17"
-    line : "San Francisco, CA 94110"
+name: "Morgan A. Conbere"
+address: {
+    line: "3425 19th St. Apt. 17"
+    line: "San Francisco, CA 94110"
 }
-email_address : "mconbere@gmail.com"
-phone_number : "(909) 450-3778"
+email_address: "mconbere@gmail.com"
+phone_number: "(909) 450-3778"
 
-education : {
-    institute : "Harvey Mudd College"
-    address : {
-        line : "340 E. Foothill Blvd."
-        line : "Claremont, CA 91711"
+education: {
+    institute: "Harvey Mudd College"
+    address: {
+        line: "340 E. Foothill Blvd."
+        line: "Claremont, CA 91711"
     }
-    degree : "B.S., Computer Science (Fine Arts concentration)"
-    date_range : {
-        began : {
-            year : 2004
-            month : AUGUST
+    degree: "B.S., Computer Science"
+    date_range: {
+        began: {
+            year: 2004
+            month: AUGUST
         }
-        ended : {
-            year : 2008
-            month : MAY
-        }
-    }
-
-    note : "3.5 in major GPA, 3.3 overall. Graduated with honors. Dean's list all semesters."
-    note : "Broad Computer Science education: Operating Systems, Programming Language theory, Algorithms, Chip design"
-}
-
-employment : {
-    company : "Plausible Labs Cooperative, Inc."
-    title : "Software Engineer"
-    website : "http://plausible.coop"
-    date_range : {
-        began : {
-            year : 2010
-            month : SEPTEMBER
+        ended: {
+            year: 2008
+            month: MAY
         }
     }
 
-    note : "Maintained and added features to the popular Comics iOS application"
-    note : "As part of a 4 member team designed and implemented a complete overhaul of the application"
+    note: "3.5 in major GPA, 3.3 overall. Graduated with honors. Dean's list all semesters."
+    note: "Broad Computer Science education: Operating Systems, Programming Languages, Algorithms, Robotics, Chip design"
 }
 
-employment : {
-    company : "OnLive, Inc."
-    title : "Member of Technical Staff, Mac lead"
-    website : "http://onlive.com"
-    date_range : {
-        began : {
-            year : 2008
-            month : JUNE
-        }
-        ended : {
-            year : 2010
-            month : SEPTEMBER
+employment: {
+    company: "Plausible Labs Cooperative, Inc."
+    title: "Software Engineer"
+    website: "http://plausible.coop"
+    date_range: {
+        began: {
+            year: 2010
+            month: SEPTEMBER
         }
     }
 
-    note : "Involved in all areas of development at early stage startup"
-    note : "Led team to port software to Mac OS X and iOS"
-    note : "Implemented low latency audio and video presentation layers"
+    note: "Engineer at 4 person software cooperative focussing on mobile development contracting."
+    note: "Maintained and overhauled to the popular Comics iOS application"
 }
 
-employment : {
-    company : "Microsoft / Harvey Mudd College"
-    title : "Hardware Accelerated Perceptual Image Filtering"
-    date_range : {
-        began : {
-            year : 2007
-            month : SEPTEMBER
+employment: {
+    company: "OnLive, Inc."
+    title: "Member of Technical Staff, Mac lead"
+    website: "http://onlive.com"
+    date_range: {
+        began: {
+            year: 2008
+            month: JUNE
         }
-        ended : {
-            year : 2008
-            month : MAY
+        ended: {
+            year: 2010
+            month: SEPTEMBER
         }
     }
 
-    note : "As a member of a 5 person team developed GPU accelerated image processing framework."
-    note : "Designed and implemented innovated perceptual image filters."
+    note: "Involved in all areas of development at early stage startup"
+    note: "Led team to port software to Mac OS X and iOS"
+    note: "Implemented low latency audio and video presentation layers"
 }
 
-employment : {
-    company : "Harvey Mudd College"
-    title : "Dormitory Proctor"
-    date_range : {
-        began : {
-            year : 2007
-            month : MAY
+employment: {
+    company: "Microsoft / Harvey Mudd College"
+    title: "Hardware Accelerated Perceptual Image Filtering"
+    date_range: {
+        began: {
+            year: 2007
+            month: SEPTEMBER
         }
-        ended : {
-            year : 2008
-            month : MAY
+        ended: {
+            year: 2008
+            month: MAY
         }
     }
 
-    note : "One of 10 students responsible for the safety and health of student body on campus"
-    note : "Worked one-on-one with students to resolve conflicts and emotional problems"
-    note : "Acted as a liaison between student body and administration"
-    note : "Responded to campus emergencies"
+    note: "As a member of a 5 person team developed GPU accelerated image processing framework"
+    note: "Designed and implemented innovated perceptual image filters involving saturation contrast and HDR bilateral filtering"
 }
 
-project : {
-    title : "OpenCV: Open Computer Vision Library"
-    role : "Contributor"
-    date_range : {
-        began : {
-            year : 2007
-            month : MAY
+employment: {
+    company: "Harvey Mudd College"
+    title: "Dormitory Proctor"
+    date_range: {
+        began: {
+            year: 2007
+            month: MAY
         }
-        ended : {
-            year : 2008
-            month : DECEMBER
+        ended: {
+            year: 2008
+            month: MAY
         }
     }
 
-    note : "Wrote Autotools script to produce a universal binary framework"
-    note : "Ported image loading and saving to Mac OS X technologies"
-    note : "Used libraries to promote educational robotics"
+    note: "One of 10 students responsible for the safety and health of student body"
+    note: "Worked one-on-one with students to resolve conflicts and emotional problems"
+    note: "Acted as a liaison between student body and administration"
+    note: "Responded to campus emergencies"
 }
 
-project : {
-    title : "MacSweeper: A Minesweeper clone for OS X"
-    role : "Creator"
-    website : "http://code.google.com/p/macsweeper/"
-    date_range : {
-        began : {
-            year : 2007
-            month : JUNE
-        }
-        ended : {
-            year : 2009
-            month : OCTOBER
+project: {
+    title: "Protobuf Résumé"
+    role: "Creator"
+    website: "http://github.com/mconbere/Resume"
+    date_range: {
+        began: {
+            year: 2011
+            month: APRIL
         }
     }
 
-    note : "Designed and implemented Minesweeper as a method of learning Objective-C and Cocoa"
-    note : "Maintained as an open source project"
+    note: "Designed a protobuf representation of a résumé"
+    note: "Implemented supporting tools to transform a binary or textual protobuf resume into readable Markdown or HTML"
 }
 
-publication : {
-    title : "Toys and Tools: Accessible Robotics via Laptop Computers"
-    author : "Morgan Conbere"
-    author : "Zachary Dodds"
-    journal : "AAAI 2007"
-    url : "http://robotics.cs.brown.edu/aaai07/materials/hmc_paper.pdf"
+project: {
+    title: "OpenCV: Open Computer Vision Library"
+    role: "Contributor"
+    date_range: {
+        began: {
+            year: 2007
+            month: MAY
+        }
+        ended: {
+            year: 2008
+            month: DECEMBER
+        }
+    }
+
+    note: "Wrote Autotools script to produce a universal binary framework"
+    note: "Ported image loading and saving to Mac OS X technologies"
+    note: "Used libraries to promote educational robotics"
 }
 
-publication : {
-    title : "Environments for a Networking Laboratory"
-    author : "Morgan Conbere"
-    author : "Mike Erlinger"
-    author : "Renzo Davoli"
-    author : "Michael Goldweber"
-    journal : "NACCQ 2007"
-    url : "http://hyperdisc.unitec.ac.nz/naccq07/proceedings/papers/53.pdf"
+project: {
+    title: "MacSweeper: A Minesweeper clone for OS X"
+    role: "Creator"
+    website: "http://code.google.com/p/macsweeper/"
+    date_range: {
+        began: {
+            year: 2007
+            month: JUNE
+        }
+        ended: {
+            year: 2009
+            month: OCTOBER
+        }
+    }
+
+    note: "Designed and implemented Minesweeper as a method of learning Objective-C and Cocoa"
+    note: "Maintained as an open source project"
+}
+
+publication: {
+    title: "Toys and Tools: Accessible Robotics via Laptop Computers"
+    author: "Morgan Conbere"
+    author: "Zachary Dodds"
+    journal: "AAAI 2007"
+    url: "http://robotics.cs.brown.edu/aaai07/materials/hmc_paper.pdf"
+}
+
+publication: {
+    title: "Environments for a Networking Laboratory"
+    author: "Morgan Conbere"
+    author: "Mike Erlinger"
+    author: "Renzo Davoli"
+    author: "Michael Goldweber"
+    journal: "NACCQ 2007"
+    url: "http://hyperdisc.unitec.ac.nz/naccq07/proceedings/papers/53.pdf"
 }
