@@ -31,10 +31,10 @@ LDFLAGS := $(PROTOLDFLAGS) $(LDFLAGS)
 
 EXE = resume-gen-markdown
 
-PROTOS := $(shell find . -name "*.proto" | tr '\n' ' ')
+PROTOS := $(shell find proto -name "*.proto" | tr '\n' ' ')
 PROTOSRCS := $(PROTOS:%.proto=%.pb.cc)
 PROTOHDRS := $(PROTOS:%.proto=%.pb.h)
-SRCS := $(shell find . -name "*.cc" | tr '\n' ' ') $(PROTOSRCS)
+SRCS := $(shell find proto src -name "*.cc" | tr '\n' ' ') $(PROTOSRCS)
 OBJS := $(SRCS:%.cc=%.o)
 DEPS := $(SRCS:%.cc=%.d)
 
