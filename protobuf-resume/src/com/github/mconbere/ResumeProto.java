@@ -233,8 +233,10 @@ public final class ResumeProto {
       return size;
     }
     
+    private static final long serialVersionUID = 0L;
     @java.lang.Override
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
     
@@ -678,8 +680,10 @@ public final class ResumeProto {
       return size;
     }
     
+    private static final long serialVersionUID = 0L;
     @java.lang.Override
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
     
@@ -1199,6 +1203,10 @@ public final class ResumeProto {
         getPublicationOrBuilderList();
     com.github.mconbere.ResumeProto.Resume.PublicationOrBuilder getPublicationOrBuilder(
         int index);
+    
+    // optional string formatted_url = 11;
+    boolean hasFormattedUrl();
+    String getFormattedUrl();
   }
   public static final class Resume extends
       com.google.protobuf.GeneratedMessage
@@ -1319,8 +1327,10 @@ public final class ResumeProto {
         return size;
       }
       
+      private static final long serialVersionUID = 0L;
       @java.lang.Override
-      protected Object writeReplace() throws java.io.ObjectStreamException {
+      protected java.lang.Object writeReplace()
+          throws java.io.ObjectStreamException {
         return super.writeReplace();
       }
       
@@ -1672,12 +1682,12 @@ public final class ResumeProto {
       private int bitField0_;
       // required string institute = 1;
       public static final int INSTITUTE_FIELD_NUMBER = 1;
-      private Object institute_;
+      private java.lang.Object institute_;
       public boolean hasInstitute() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       public String getInstitute() {
-        Object ref = institute_;
+        java.lang.Object ref = institute_;
         if (ref instanceof String) {
           return (String) ref;
         } else {
@@ -1691,7 +1701,7 @@ public final class ResumeProto {
         }
       }
       private com.google.protobuf.ByteString getInstituteBytes() {
-        Object ref = institute_;
+        java.lang.Object ref = institute_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -1717,12 +1727,12 @@ public final class ResumeProto {
       
       // optional string degree = 3;
       public static final int DEGREE_FIELD_NUMBER = 3;
-      private Object degree_;
+      private java.lang.Object degree_;
       public boolean hasDegree() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       public String getDegree() {
-        Object ref = degree_;
+        java.lang.Object ref = degree_;
         if (ref instanceof String) {
           return (String) ref;
         } else {
@@ -1736,7 +1746,7 @@ public final class ResumeProto {
         }
       }
       private com.google.protobuf.ByteString getDegreeBytes() {
-        Object ref = degree_;
+        java.lang.Object ref = degree_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -1851,8 +1861,10 @@ public final class ResumeProto {
         return size;
       }
       
+      private static final long serialVersionUID = 0L;
       @java.lang.Override
-      protected Object writeReplace() throws java.io.ObjectStreamException {
+      protected java.lang.Object writeReplace()
+          throws java.io.ObjectStreamException {
         return super.writeReplace();
       }
       
@@ -2169,12 +2181,12 @@ public final class ResumeProto {
         private int bitField0_;
         
         // required string institute = 1;
-        private Object institute_ = "";
+        private java.lang.Object institute_ = "";
         public boolean hasInstitute() {
           return ((bitField0_ & 0x00000001) == 0x00000001);
         }
         public String getInstitute() {
-          Object ref = institute_;
+          java.lang.Object ref = institute_;
           if (!(ref instanceof String)) {
             String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
             institute_ = s;
@@ -2295,12 +2307,12 @@ public final class ResumeProto {
         }
         
         // optional string degree = 3;
-        private Object degree_ = "";
+        private java.lang.Object degree_ = "";
         public boolean hasDegree() {
           return ((bitField0_ & 0x00000004) == 0x00000004);
         }
         public String getDegree() {
-          Object ref = degree_;
+          java.lang.Object ref = degree_;
           if (!(ref instanceof String)) {
             String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
             degree_ = s;
@@ -2548,12 +2560,12 @@ public final class ResumeProto {
       private int bitField0_;
       // required string company = 1;
       public static final int COMPANY_FIELD_NUMBER = 1;
-      private Object company_;
+      private java.lang.Object company_;
       public boolean hasCompany() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       public String getCompany() {
-        Object ref = company_;
+        java.lang.Object ref = company_;
         if (ref instanceof String) {
           return (String) ref;
         } else {
@@ -2567,7 +2579,7 @@ public final class ResumeProto {
         }
       }
       private com.google.protobuf.ByteString getCompanyBytes() {
-        Object ref = company_;
+        java.lang.Object ref = company_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -2580,12 +2592,12 @@ public final class ResumeProto {
       
       // optional string title = 2;
       public static final int TITLE_FIELD_NUMBER = 2;
-      private Object title_;
+      private java.lang.Object title_;
       public boolean hasTitle() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       public String getTitle() {
-        Object ref = title_;
+        java.lang.Object ref = title_;
         if (ref instanceof String) {
           return (String) ref;
         } else {
@@ -2599,7 +2611,7 @@ public final class ResumeProto {
         }
       }
       private com.google.protobuf.ByteString getTitleBytes() {
-        Object ref = title_;
+        java.lang.Object ref = title_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -2625,12 +2637,12 @@ public final class ResumeProto {
       
       // optional string website = 4;
       public static final int WEBSITE_FIELD_NUMBER = 4;
-      private Object website_;
+      private java.lang.Object website_;
       public boolean hasWebsite() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       public String getWebsite() {
-        Object ref = website_;
+        java.lang.Object ref = website_;
         if (ref instanceof String) {
           return (String) ref;
         } else {
@@ -2644,7 +2656,7 @@ public final class ResumeProto {
         }
       }
       private com.google.protobuf.ByteString getWebsiteBytes() {
-        Object ref = website_;
+        java.lang.Object ref = website_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -2767,8 +2779,10 @@ public final class ResumeProto {
         return size;
       }
       
+      private static final long serialVersionUID = 0L;
       @java.lang.Override
-      protected Object writeReplace() throws java.io.ObjectStreamException {
+      protected java.lang.Object writeReplace()
+          throws java.io.ObjectStreamException {
         return super.writeReplace();
       }
       
@@ -3099,12 +3113,12 @@ public final class ResumeProto {
         private int bitField0_;
         
         // required string company = 1;
-        private Object company_ = "";
+        private java.lang.Object company_ = "";
         public boolean hasCompany() {
           return ((bitField0_ & 0x00000001) == 0x00000001);
         }
         public String getCompany() {
-          Object ref = company_;
+          java.lang.Object ref = company_;
           if (!(ref instanceof String)) {
             String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
             company_ = s;
@@ -3135,12 +3149,12 @@ public final class ResumeProto {
         }
         
         // optional string title = 2;
-        private Object title_ = "";
+        private java.lang.Object title_ = "";
         public boolean hasTitle() {
           return ((bitField0_ & 0x00000002) == 0x00000002);
         }
         public String getTitle() {
-          Object ref = title_;
+          java.lang.Object ref = title_;
           if (!(ref instanceof String)) {
             String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
             title_ = s;
@@ -3261,12 +3275,12 @@ public final class ResumeProto {
         }
         
         // optional string website = 4;
-        private Object website_ = "";
+        private java.lang.Object website_ = "";
         public boolean hasWebsite() {
           return ((bitField0_ & 0x00000008) == 0x00000008);
         }
         public String getWebsite() {
-          Object ref = website_;
+          java.lang.Object ref = website_;
           if (!(ref instanceof String)) {
             String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
             website_ = s;
@@ -3495,12 +3509,12 @@ public final class ResumeProto {
       private int bitField0_;
       // optional string title = 1 [default = "Objective"];
       public static final int TITLE_FIELD_NUMBER = 1;
-      private Object title_;
+      private java.lang.Object title_;
       public boolean hasTitle() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       public String getTitle() {
-        Object ref = title_;
+        java.lang.Object ref = title_;
         if (ref instanceof String) {
           return (String) ref;
         } else {
@@ -3514,7 +3528,7 @@ public final class ResumeProto {
         }
       }
       private com.google.protobuf.ByteString getTitleBytes() {
-        Object ref = title_;
+        java.lang.Object ref = title_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -3527,12 +3541,12 @@ public final class ResumeProto {
       
       // required string contents = 2;
       public static final int CONTENTS_FIELD_NUMBER = 2;
-      private Object contents_;
+      private java.lang.Object contents_;
       public boolean hasContents() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       public String getContents() {
-        Object ref = contents_;
+        java.lang.Object ref = contents_;
         if (ref instanceof String) {
           return (String) ref;
         } else {
@@ -3546,7 +3560,7 @@ public final class ResumeProto {
         }
       }
       private com.google.protobuf.ByteString getContentsBytes() {
-        Object ref = contents_;
+        java.lang.Object ref = contents_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -3605,8 +3619,10 @@ public final class ResumeProto {
         return size;
       }
       
+      private static final long serialVersionUID = 0L;
       @java.lang.Override
-      protected Object writeReplace() throws java.io.ObjectStreamException {
+      protected java.lang.Object writeReplace()
+          throws java.io.ObjectStreamException {
         return super.writeReplace();
       }
       
@@ -3846,12 +3862,12 @@ public final class ResumeProto {
         private int bitField0_;
         
         // optional string title = 1 [default = "Objective"];
-        private Object title_ = "Objective";
+        private java.lang.Object title_ = "Objective";
         public boolean hasTitle() {
           return ((bitField0_ & 0x00000001) == 0x00000001);
         }
         public String getTitle() {
-          Object ref = title_;
+          java.lang.Object ref = title_;
           if (!(ref instanceof String)) {
             String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
             title_ = s;
@@ -3882,12 +3898,12 @@ public final class ResumeProto {
         }
         
         // required string contents = 2;
-        private Object contents_ = "";
+        private java.lang.Object contents_ = "";
         public boolean hasContents() {
           return ((bitField0_ & 0x00000002) == 0x00000002);
         }
         public String getContents() {
-          Object ref = contents_;
+          java.lang.Object ref = contents_;
           if (!(ref instanceof String)) {
             String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
             contents_ = s;
@@ -3984,12 +4000,12 @@ public final class ResumeProto {
       private int bitField0_;
       // required string title = 1;
       public static final int TITLE_FIELD_NUMBER = 1;
-      private Object title_;
+      private java.lang.Object title_;
       public boolean hasTitle() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       public String getTitle() {
-        Object ref = title_;
+        java.lang.Object ref = title_;
         if (ref instanceof String) {
           return (String) ref;
         } else {
@@ -4003,7 +4019,7 @@ public final class ResumeProto {
         }
       }
       private com.google.protobuf.ByteString getTitleBytes() {
-        Object ref = title_;
+        java.lang.Object ref = title_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -4016,12 +4032,12 @@ public final class ResumeProto {
       
       // optional string role = 2;
       public static final int ROLE_FIELD_NUMBER = 2;
-      private Object role_;
+      private java.lang.Object role_;
       public boolean hasRole() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       public String getRole() {
-        Object ref = role_;
+        java.lang.Object ref = role_;
         if (ref instanceof String) {
           return (String) ref;
         } else {
@@ -4035,7 +4051,7 @@ public final class ResumeProto {
         }
       }
       private com.google.protobuf.ByteString getRoleBytes() {
-        Object ref = role_;
+        java.lang.Object ref = role_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -4048,12 +4064,12 @@ public final class ResumeProto {
       
       // optional string website = 3;
       public static final int WEBSITE_FIELD_NUMBER = 3;
-      private Object website_;
+      private java.lang.Object website_;
       public boolean hasWebsite() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       public String getWebsite() {
-        Object ref = website_;
+        java.lang.Object ref = website_;
         if (ref instanceof String) {
           return (String) ref;
         } else {
@@ -4067,7 +4083,7 @@ public final class ResumeProto {
         }
       }
       private com.google.protobuf.ByteString getWebsiteBytes() {
-        Object ref = website_;
+        java.lang.Object ref = website_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -4182,8 +4198,10 @@ public final class ResumeProto {
         return size;
       }
       
+      private static final long serialVersionUID = 0L;
       @java.lang.Override
-      protected Object writeReplace() throws java.io.ObjectStreamException {
+      protected java.lang.Object writeReplace()
+          throws java.io.ObjectStreamException {
         return super.writeReplace();
       }
       
@@ -4487,12 +4505,12 @@ public final class ResumeProto {
         private int bitField0_;
         
         // required string title = 1;
-        private Object title_ = "";
+        private java.lang.Object title_ = "";
         public boolean hasTitle() {
           return ((bitField0_ & 0x00000001) == 0x00000001);
         }
         public String getTitle() {
-          Object ref = title_;
+          java.lang.Object ref = title_;
           if (!(ref instanceof String)) {
             String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
             title_ = s;
@@ -4523,12 +4541,12 @@ public final class ResumeProto {
         }
         
         // optional string role = 2;
-        private Object role_ = "";
+        private java.lang.Object role_ = "";
         public boolean hasRole() {
           return ((bitField0_ & 0x00000002) == 0x00000002);
         }
         public String getRole() {
-          Object ref = role_;
+          java.lang.Object ref = role_;
           if (!(ref instanceof String)) {
             String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
             role_ = s;
@@ -4559,12 +4577,12 @@ public final class ResumeProto {
         }
         
         // optional string website = 3;
-        private Object website_ = "";
+        private java.lang.Object website_ = "";
         public boolean hasWebsite() {
           return ((bitField0_ & 0x00000004) == 0x00000004);
         }
         public String getWebsite() {
-          Object ref = website_;
+          java.lang.Object ref = website_;
           if (!(ref instanceof String)) {
             String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
             website_ = s;
@@ -4812,12 +4830,12 @@ public final class ResumeProto {
       private int bitField0_;
       // required string title = 1;
       public static final int TITLE_FIELD_NUMBER = 1;
-      private Object title_;
+      private java.lang.Object title_;
       public boolean hasTitle() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       public String getTitle() {
-        Object ref = title_;
+        java.lang.Object ref = title_;
         if (ref instanceof String) {
           return (String) ref;
         } else {
@@ -4831,7 +4849,7 @@ public final class ResumeProto {
         }
       }
       private com.google.protobuf.ByteString getTitleBytes() {
-        Object ref = title_;
+        java.lang.Object ref = title_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -4857,12 +4875,12 @@ public final class ResumeProto {
       
       // optional string url = 3;
       public static final int URL_FIELD_NUMBER = 3;
-      private Object url_;
+      private java.lang.Object url_;
       public boolean hasUrl() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       public String getUrl() {
-        Object ref = url_;
+        java.lang.Object ref = url_;
         if (ref instanceof String) {
           return (String) ref;
         } else {
@@ -4876,7 +4894,7 @@ public final class ResumeProto {
         }
       }
       private com.google.protobuf.ByteString getUrlBytes() {
-        Object ref = url_;
+        java.lang.Object ref = url_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -4903,12 +4921,12 @@ public final class ResumeProto {
       
       // optional string journal = 5;
       public static final int JOURNAL_FIELD_NUMBER = 5;
-      private Object journal_;
+      private java.lang.Object journal_;
       public boolean hasJournal() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       public String getJournal() {
-        Object ref = journal_;
+        java.lang.Object ref = journal_;
         if (ref instanceof String) {
           return (String) ref;
         } else {
@@ -4922,7 +4940,7 @@ public final class ResumeProto {
         }
       }
       private com.google.protobuf.ByteString getJournalBytes() {
-        Object ref = journal_;
+        java.lang.Object ref = journal_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -5037,8 +5055,10 @@ public final class ResumeProto {
         return size;
       }
       
+      private static final long serialVersionUID = 0L;
       @java.lang.Override
-      protected Object writeReplace() throws java.io.ObjectStreamException {
+      protected java.lang.Object writeReplace()
+          throws java.io.ObjectStreamException {
         return super.writeReplace();
       }
       
@@ -5365,12 +5385,12 @@ public final class ResumeProto {
         private int bitField0_;
         
         // required string title = 1;
-        private Object title_ = "";
+        private java.lang.Object title_ = "";
         public boolean hasTitle() {
           return ((bitField0_ & 0x00000001) == 0x00000001);
         }
         public String getTitle() {
-          Object ref = title_;
+          java.lang.Object ref = title_;
           if (!(ref instanceof String)) {
             String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
             title_ = s;
@@ -5491,12 +5511,12 @@ public final class ResumeProto {
         }
         
         // optional string url = 3;
-        private Object url_ = "";
+        private java.lang.Object url_ = "";
         public boolean hasUrl() {
           return ((bitField0_ & 0x00000004) == 0x00000004);
         }
         public String getUrl() {
-          Object ref = url_;
+          java.lang.Object ref = url_;
           if (!(ref instanceof String)) {
             String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
             url_ = s;
@@ -5583,12 +5603,12 @@ public final class ResumeProto {
         }
         
         // optional string journal = 5;
-        private Object journal_ = "";
+        private java.lang.Object journal_ = "";
         public boolean hasJournal() {
           return ((bitField0_ & 0x00000010) == 0x00000010);
         }
         public String getJournal() {
-          Object ref = journal_;
+          java.lang.Object ref = journal_;
           if (!(ref instanceof String)) {
             String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
             journal_ = s;
@@ -5688,12 +5708,12 @@ public final class ResumeProto {
     private int bitField0_;
     // required string name = 1;
     public static final int NAME_FIELD_NUMBER = 1;
-    private Object name_;
+    private java.lang.Object name_;
     public boolean hasName() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     public String getName() {
-      Object ref = name_;
+      java.lang.Object ref = name_;
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -5707,7 +5727,7 @@ public final class ResumeProto {
       }
     }
     private com.google.protobuf.ByteString getNameBytes() {
-      Object ref = name_;
+      java.lang.Object ref = name_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -5733,12 +5753,12 @@ public final class ResumeProto {
     
     // optional string email_address = 3;
     public static final int EMAIL_ADDRESS_FIELD_NUMBER = 3;
-    private Object emailAddress_;
+    private java.lang.Object emailAddress_;
     public boolean hasEmailAddress() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     public String getEmailAddress() {
-      Object ref = emailAddress_;
+      java.lang.Object ref = emailAddress_;
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -5752,7 +5772,7 @@ public final class ResumeProto {
       }
     }
     private com.google.protobuf.ByteString getEmailAddressBytes() {
-      Object ref = emailAddress_;
+      java.lang.Object ref = emailAddress_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -5765,12 +5785,12 @@ public final class ResumeProto {
     
     // optional string phone_number = 4;
     public static final int PHONE_NUMBER_FIELD_NUMBER = 4;
-    private Object phoneNumber_;
+    private java.lang.Object phoneNumber_;
     public boolean hasPhoneNumber() {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
     public String getPhoneNumber() {
-      Object ref = phoneNumber_;
+      java.lang.Object ref = phoneNumber_;
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -5784,7 +5804,7 @@ public final class ResumeProto {
       }
     }
     private com.google.protobuf.ByteString getPhoneNumberBytes() {
-      Object ref = phoneNumber_;
+      java.lang.Object ref = phoneNumber_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -5797,12 +5817,12 @@ public final class ResumeProto {
     
     // optional string website = 5;
     public static final int WEBSITE_FIELD_NUMBER = 5;
-    private Object website_;
+    private java.lang.Object website_;
     public boolean hasWebsite() {
       return ((bitField0_ & 0x00000010) == 0x00000010);
     }
     public String getWebsite() {
-      Object ref = website_;
+      java.lang.Object ref = website_;
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -5816,7 +5836,7 @@ public final class ResumeProto {
       }
     }
     private com.google.protobuf.ByteString getWebsiteBytes() {
-      Object ref = website_;
+      java.lang.Object ref = website_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -5924,6 +5944,38 @@ public final class ResumeProto {
       return publication_.get(index);
     }
     
+    // optional string formatted_url = 11;
+    public static final int FORMATTED_URL_FIELD_NUMBER = 11;
+    private java.lang.Object formattedUrl_;
+    public boolean hasFormattedUrl() {
+      return ((bitField0_ & 0x00000040) == 0x00000040);
+    }
+    public String getFormattedUrl() {
+      java.lang.Object ref = formattedUrl_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          formattedUrl_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getFormattedUrlBytes() {
+      java.lang.Object ref = formattedUrl_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        formattedUrl_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
     private void initFields() {
       name_ = "";
       address_ = com.github.mconbere.ResumeProto.Resume.Address.getDefaultInstance();
@@ -5935,6 +5987,7 @@ public final class ResumeProto {
       employment_ = java.util.Collections.emptyList();
       project_ = java.util.Collections.emptyList();
       publication_ = java.util.Collections.emptyList();
+      formattedUrl_ = "";
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -6012,6 +6065,9 @@ public final class ResumeProto {
       for (int i = 0; i < publication_.size(); i++) {
         output.writeMessage(10, publication_.get(i));
       }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        output.writeBytes(11, getFormattedUrlBytes());
+      }
       getUnknownFields().writeTo(output);
     }
     
@@ -6061,13 +6117,19 @@ public final class ResumeProto {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(10, publication_.get(i));
       }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(11, getFormattedUrlBytes());
+      }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
       return size;
     }
     
+    private static final long serialVersionUID = 0L;
     @java.lang.Override
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
     
@@ -6233,6 +6295,8 @@ public final class ResumeProto {
         } else {
           publicationBuilder_.clear();
         }
+        formattedUrl_ = "";
+        bitField0_ = (bitField0_ & ~0x00000400);
         return this;
       }
       
@@ -6339,6 +6403,10 @@ public final class ResumeProto {
         } else {
           result.publication_ = publicationBuilder_.build();
         }
+        if (((from_bitField0_ & 0x00000400) == 0x00000400)) {
+          to_bitField0_ |= 0x00000040;
+        }
+        result.formattedUrl_ = formattedUrl_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -6477,6 +6545,9 @@ public final class ResumeProto {
             }
           }
         }
+        if (other.hasFormattedUrl()) {
+          setFormattedUrl(other.getFormattedUrl());
+        }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
@@ -6604,6 +6675,11 @@ public final class ResumeProto {
               addPublication(subBuilder.buildPartial());
               break;
             }
+            case 90: {
+              bitField0_ |= 0x00000400;
+              formattedUrl_ = input.readBytes();
+              break;
+            }
           }
         }
       }
@@ -6611,12 +6687,12 @@ public final class ResumeProto {
       private int bitField0_;
       
       // required string name = 1;
-      private Object name_ = "";
+      private java.lang.Object name_ = "";
       public boolean hasName() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       public String getName() {
-        Object ref = name_;
+        java.lang.Object ref = name_;
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           name_ = s;
@@ -6737,12 +6813,12 @@ public final class ResumeProto {
       }
       
       // optional string email_address = 3;
-      private Object emailAddress_ = "";
+      private java.lang.Object emailAddress_ = "";
       public boolean hasEmailAddress() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       public String getEmailAddress() {
-        Object ref = emailAddress_;
+        java.lang.Object ref = emailAddress_;
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           emailAddress_ = s;
@@ -6773,12 +6849,12 @@ public final class ResumeProto {
       }
       
       // optional string phone_number = 4;
-      private Object phoneNumber_ = "";
+      private java.lang.Object phoneNumber_ = "";
       public boolean hasPhoneNumber() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       public String getPhoneNumber() {
-        Object ref = phoneNumber_;
+        java.lang.Object ref = phoneNumber_;
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           phoneNumber_ = s;
@@ -6809,12 +6885,12 @@ public final class ResumeProto {
       }
       
       // optional string website = 5;
-      private Object website_ = "";
+      private java.lang.Object website_ = "";
       public boolean hasWebsite() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
       public String getWebsite() {
-        Object ref = website_;
+        java.lang.Object ref = website_;
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           website_ = s;
@@ -7678,6 +7754,42 @@ public final class ResumeProto {
         return publicationBuilder_;
       }
       
+      // optional string formatted_url = 11;
+      private java.lang.Object formattedUrl_ = "";
+      public boolean hasFormattedUrl() {
+        return ((bitField0_ & 0x00000400) == 0x00000400);
+      }
+      public String getFormattedUrl() {
+        java.lang.Object ref = formattedUrl_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          formattedUrl_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setFormattedUrl(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000400;
+        formattedUrl_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearFormattedUrl() {
+        bitField0_ = (bitField0_ & ~0x00000400);
+        formattedUrl_ = getDefaultInstance().getFormattedUrl();
+        onChanged();
+        return this;
+      }
+      void setFormattedUrl(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000400;
+        formattedUrl_ = value;
+        onChanged();
+      }
+      
       // @@protoc_insertion_point(builder_scope:com.github.mconbere.Resume)
     }
     
@@ -7752,7 +7864,7 @@ public final class ResumeProto {
       "BER\020\010\022\013\n\007OCTOBER\020\t\022\014\n\010NOVEMBER\020\n\022\014\n\010DECE" +
       "MBER\020\013\"_\n\tDateRange\022(\n\005began\030\001 \001(\0132\031.com" +
       ".github.mconbere.Date\022(\n\005ended\030\002 \001(\0132\031.c" +
-      "om.github.mconbere.Date\"\340\010\n\006Resume\022\014\n\004na",
+      "om.github.mconbere.Date\"\367\010\n\006Resume\022\014\n\004na",
       "me\030\001 \002(\t\0224\n\007address\030\002 \001(\0132#.com.github.m" +
       "conbere.Resume.Address\022\025\n\remail_address\030" +
       "\003 \001(\t\022\024\n\014phone_number\030\004 \001(\t\022\017\n\007website\030\005" +
@@ -7763,24 +7875,25 @@ public final class ResumeProto {
       "re.Resume.Employment\0224\n\007project\030\t \003(\0132#." +
       "com.github.mconbere.Resume.Project\022<\n\013pu" +
       "blication\030\n \003(\0132\'.com.github.mconbere.Re",
-      "sume.Publication\032\027\n\007Address\022\014\n\004line\030\001 \003(" +
-      "\t\032\246\001\n\tEducation\022\021\n\tinstitute\030\001 \002(\t\0224\n\007ad" +
-      "dress\030\002 \001(\0132#.com.github.mconbere.Resume" +
-      ".Address\022\016\n\006degree\030\003 \001(\t\0222\n\ndate_range\030\004" +
-      " \001(\0132\036.com.github.mconbere.DateRange\022\014\n\004" +
-      "note\030\005 \003(\t\032\265\001\n\nEmployment\022\017\n\007company\030\001 \002" +
-      "(\t\022\r\n\005title\030\002 \001(\t\0224\n\007address\030\003 \001(\0132#.com" +
-      ".github.mconbere.Resume.Address\022\017\n\007websi" +
-      "te\030\004 \001(\t\0222\n\ndate_range\030\005 \001(\0132\036.com.githu" +
-      "b.mconbere.DateRange\022\014\n\004note\030\006 \003(\t\0327\n\tOb",
-      "jective\022\030\n\005title\030\001 \001(\t:\tObjective\022\020\n\010con" +
-      "tents\030\002 \002(\t\032y\n\007Project\022\r\n\005title\030\001 \002(\t\022\014\n" +
-      "\004role\030\002 \001(\t\022\017\n\007website\030\003 \001(\t\0222\n\ndate_ran" +
-      "ge\030\004 \001(\0132\036.com.github.mconbere.DateRange" +
-      "\022\014\n\004note\030\005 \003(\t\032\201\001\n\013Publication\022\r\n\005title\030" +
-      "\001 \002(\t\022\'\n\004date\030\002 \001(\0132\031.com.github.mconber" +
-      "e.Date\022\013\n\003url\030\003 \001(\t\022\016\n\006author\030\004 \003(\t\022\017\n\007j" +
-      "ournal\030\005 \001(\t\022\014\n\004note\030\006 \003(\t"
+      "sume.Publication\022\025\n\rformatted_url\030\013 \001(\t\032" +
+      "\027\n\007Address\022\014\n\004line\030\001 \003(\t\032\246\001\n\tEducation\022\021" +
+      "\n\tinstitute\030\001 \002(\t\0224\n\007address\030\002 \001(\0132#.com" +
+      ".github.mconbere.Resume.Address\022\016\n\006degre" +
+      "e\030\003 \001(\t\0222\n\ndate_range\030\004 \001(\0132\036.com.github" +
+      ".mconbere.DateRange\022\014\n\004note\030\005 \003(\t\032\265\001\n\nEm" +
+      "ployment\022\017\n\007company\030\001 \002(\t\022\r\n\005title\030\002 \001(\t" +
+      "\0224\n\007address\030\003 \001(\0132#.com.github.mconbere." +
+      "Resume.Address\022\017\n\007website\030\004 \001(\t\0222\n\ndate_" +
+      "range\030\005 \001(\0132\036.com.github.mconbere.DateRa",
+      "nge\022\014\n\004note\030\006 \003(\t\0327\n\tObjective\022\030\n\005title\030" +
+      "\001 \001(\t:\tObjective\022\020\n\010contents\030\002 \002(\t\032y\n\007Pr" +
+      "oject\022\r\n\005title\030\001 \002(\t\022\014\n\004role\030\002 \001(\t\022\017\n\007we" +
+      "bsite\030\003 \001(\t\0222\n\ndate_range\030\004 \001(\0132\036.com.gi" +
+      "thub.mconbere.DateRange\022\014\n\004note\030\005 \003(\t\032\201\001" +
+      "\n\013Publication\022\r\n\005title\030\001 \002(\t\022\'\n\004date\030\002 \001" +
+      "(\0132\031.com.github.mconbere.Date\022\013\n\003url\030\003 \001" +
+      "(\t\022\016\n\006author\030\004 \003(\t\022\017\n\007journal\030\005 \001(\t\022\014\n\004n" +
+      "ote\030\006 \003(\t"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -7808,7 +7921,7 @@ public final class ResumeProto {
           internal_static_com_github_mconbere_Resume_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_com_github_mconbere_Resume_descriptor,
-              new java.lang.String[] { "Name", "Address", "EmailAddress", "PhoneNumber", "Website", "Objective", "Education", "Employment", "Project", "Publication", },
+              new java.lang.String[] { "Name", "Address", "EmailAddress", "PhoneNumber", "Website", "Objective", "Education", "Employment", "Project", "Publication", "FormattedUrl", },
               com.github.mconbere.ResumeProto.Resume.class,
               com.github.mconbere.ResumeProto.Resume.Builder.class);
           internal_static_com_github_mconbere_Resume_Address_descriptor =

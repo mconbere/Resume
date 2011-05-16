@@ -89,6 +89,9 @@ public class ProtobufResumeServlet extends HttpServlet {
 		if (resume.hasEmailAddress()) {
 			out += mailto(resume.getEmailAddress()) + BreakLine + "\n";
 		}
+		if (resume.hasWebsite()) {
+			out += url(resume.getWebsite()) + BreakLine + "\n";
+		}
 		for (int i = 0; i < resume.getAddress().getLineCount(); i++) {
 			out += resume.getAddress().getLine(i);
 			if (i + 1 != resume.getAddress().getLineCount()) out += ", ";

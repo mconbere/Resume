@@ -134,4 +134,7 @@ message Resume {
     repeated Project project = 9;
 
     repeated Publication publication = 10;
+
+    /** The url to access a formatted version of this resume. */
+    optional string formatted_url = 11;
 }

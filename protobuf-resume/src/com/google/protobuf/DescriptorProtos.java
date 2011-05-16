@@ -112,8 +112,10 @@ public final class DescriptorProtos {
       return size;
     }
     
+    private static final long serialVersionUID = 0L;
     @java.lang.Override
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
     
@@ -666,12 +668,12 @@ public final class DescriptorProtos {
     private int bitField0_;
     // optional string name = 1;
     public static final int NAME_FIELD_NUMBER = 1;
-    private Object name_;
+    private java.lang.Object name_;
     public boolean hasName() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     public String getName() {
-      Object ref = name_;
+      java.lang.Object ref = name_;
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -685,7 +687,7 @@ public final class DescriptorProtos {
       }
     }
     private com.google.protobuf.ByteString getNameBytes() {
-      Object ref = name_;
+      java.lang.Object ref = name_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -698,12 +700,12 @@ public final class DescriptorProtos {
     
     // optional string package = 2;
     public static final int PACKAGE_FIELD_NUMBER = 2;
-    private Object package_;
+    private java.lang.Object package_;
     public boolean hasPackage() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     public String getPackage() {
-      Object ref = package_;
+      java.lang.Object ref = package_;
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -717,7 +719,7 @@ public final class DescriptorProtos {
       }
     }
     private com.google.protobuf.ByteString getPackageBytes() {
-      Object ref = package_;
+      java.lang.Object ref = package_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -987,8 +989,10 @@ public final class DescriptorProtos {
       return size;
     }
     
+    private static final long serialVersionUID = 0L;
     @java.lang.Override
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
     
@@ -1523,12 +1527,12 @@ public final class DescriptorProtos {
       private int bitField0_;
       
       // optional string name = 1;
-      private Object name_ = "";
+      private java.lang.Object name_ = "";
       public boolean hasName() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       public String getName() {
-        Object ref = name_;
+        java.lang.Object ref = name_;
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           name_ = s;
@@ -1559,12 +1563,12 @@ public final class DescriptorProtos {
       }
       
       // optional string package = 2;
-      private Object package_ = "";
+      private java.lang.Object package_ = "";
       public boolean hasPackage() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       public String getPackage() {
-        Object ref = package_;
+        java.lang.Object ref = package_;
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           package_ = s;
@@ -2779,8 +2783,10 @@ public final class DescriptorProtos {
         return size;
       }
       
+      private static final long serialVersionUID = 0L;
       @java.lang.Override
-      protected Object writeReplace() throws java.io.ObjectStreamException {
+      protected java.lang.Object writeReplace()
+          throws java.io.ObjectStreamException {
         return super.writeReplace();
       }
       
@@ -3071,12 +3077,12 @@ public final class DescriptorProtos {
     private int bitField0_;
     // optional string name = 1;
     public static final int NAME_FIELD_NUMBER = 1;
-    private Object name_;
+    private java.lang.Object name_;
     public boolean hasName() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     public String getName() {
-      Object ref = name_;
+      java.lang.Object ref = name_;
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -3090,7 +3096,7 @@ public final class DescriptorProtos {
       }
     }
     private com.google.protobuf.ByteString getNameBytes() {
-      Object ref = name_;
+      java.lang.Object ref = name_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -3333,8 +3339,10 @@ public final class DescriptorProtos {
       return size;
     }
     
+    private static final long serialVersionUID = 0L;
     @java.lang.Override
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
     
@@ -3853,12 +3861,12 @@ public final class DescriptorProtos {
       private int bitField0_;
       
       // optional string name = 1;
-      private Object name_ = "";
+      private java.lang.Object name_ = "";
       public boolean hasName() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       public String getName() {
-        Object ref = name_;
+        java.lang.Object ref = name_;
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           name_ = s;
@@ -5175,12 +5183,12 @@ public final class DescriptorProtos {
     private int bitField0_;
     // optional string name = 1;
     public static final int NAME_FIELD_NUMBER = 1;
-    private Object name_;
+    private java.lang.Object name_;
     public boolean hasName() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     public String getName() {
-      Object ref = name_;
+      java.lang.Object ref = name_;
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -5194,7 +5202,7 @@ public final class DescriptorProtos {
       }
     }
     private com.google.protobuf.ByteString getNameBytes() {
-      Object ref = name_;
+      java.lang.Object ref = name_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -5237,12 +5245,12 @@ public final class DescriptorProtos {
     
     // optional string type_name = 6;
     public static final int TYPE_NAME_FIELD_NUMBER = 6;
-    private Object typeName_;
+    private java.lang.Object typeName_;
     public boolean hasTypeName() {
       return ((bitField0_ & 0x00000010) == 0x00000010);
     }
     public String getTypeName() {
-      Object ref = typeName_;
+      java.lang.Object ref = typeName_;
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -5256,7 +5264,7 @@ public final class DescriptorProtos {
       }
     }
     private com.google.protobuf.ByteString getTypeNameBytes() {
-      Object ref = typeName_;
+      java.lang.Object ref = typeName_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -5269,12 +5277,12 @@ public final class DescriptorProtos {
     
     // optional string extendee = 2;
     public static final int EXTENDEE_FIELD_NUMBER = 2;
-    private Object extendee_;
+    private java.lang.Object extendee_;
     public boolean hasExtendee() {
       return ((bitField0_ & 0x00000020) == 0x00000020);
     }
     public String getExtendee() {
-      Object ref = extendee_;
+      java.lang.Object ref = extendee_;
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -5288,7 +5296,7 @@ public final class DescriptorProtos {
       }
     }
     private com.google.protobuf.ByteString getExtendeeBytes() {
-      Object ref = extendee_;
+      java.lang.Object ref = extendee_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -5301,12 +5309,12 @@ public final class DescriptorProtos {
     
     // optional string default_value = 7;
     public static final int DEFAULT_VALUE_FIELD_NUMBER = 7;
-    private Object defaultValue_;
+    private java.lang.Object defaultValue_;
     public boolean hasDefaultValue() {
       return ((bitField0_ & 0x00000040) == 0x00000040);
     }
     public String getDefaultValue() {
-      Object ref = defaultValue_;
+      java.lang.Object ref = defaultValue_;
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -5320,7 +5328,7 @@ public final class DescriptorProtos {
       }
     }
     private com.google.protobuf.ByteString getDefaultValueBytes() {
-      Object ref = defaultValue_;
+      java.lang.Object ref = defaultValue_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -5442,8 +5450,10 @@ public final class DescriptorProtos {
       return size;
     }
     
+    private static final long serialVersionUID = 0L;
     @java.lang.Override
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
     
@@ -5794,12 +5804,12 @@ public final class DescriptorProtos {
       private int bitField0_;
       
       // optional string name = 1;
-      private Object name_ = "";
+      private java.lang.Object name_ = "";
       public boolean hasName() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       public String getName() {
-        Object ref = name_;
+        java.lang.Object ref = name_;
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           name_ = s;
@@ -5899,12 +5909,12 @@ public final class DescriptorProtos {
       }
       
       // optional string type_name = 6;
-      private Object typeName_ = "";
+      private java.lang.Object typeName_ = "";
       public boolean hasTypeName() {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
       public String getTypeName() {
-        Object ref = typeName_;
+        java.lang.Object ref = typeName_;
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           typeName_ = s;
@@ -5935,12 +5945,12 @@ public final class DescriptorProtos {
       }
       
       // optional string extendee = 2;
-      private Object extendee_ = "";
+      private java.lang.Object extendee_ = "";
       public boolean hasExtendee() {
         return ((bitField0_ & 0x00000020) == 0x00000020);
       }
       public String getExtendee() {
-        Object ref = extendee_;
+        java.lang.Object ref = extendee_;
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           extendee_ = s;
@@ -5971,12 +5981,12 @@ public final class DescriptorProtos {
       }
       
       // optional string default_value = 7;
-      private Object defaultValue_ = "";
+      private java.lang.Object defaultValue_ = "";
       public boolean hasDefaultValue() {
         return ((bitField0_ & 0x00000040) == 0x00000040);
       }
       public String getDefaultValue() {
-        Object ref = defaultValue_;
+        java.lang.Object ref = defaultValue_;
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           defaultValue_ = s;
@@ -6160,12 +6170,12 @@ public final class DescriptorProtos {
     private int bitField0_;
     // optional string name = 1;
     public static final int NAME_FIELD_NUMBER = 1;
-    private Object name_;
+    private java.lang.Object name_;
     public boolean hasName() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     public String getName() {
-      Object ref = name_;
+      java.lang.Object ref = name_;
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -6179,7 +6189,7 @@ public final class DescriptorProtos {
       }
     }
     private com.google.protobuf.ByteString getNameBytes() {
-      Object ref = name_;
+      java.lang.Object ref = name_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -6288,8 +6298,10 @@ public final class DescriptorProtos {
       return size;
     }
     
+    private static final long serialVersionUID = 0L;
     @java.lang.Override
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
     
@@ -6598,12 +6610,12 @@ public final class DescriptorProtos {
       private int bitField0_;
       
       // optional string name = 1;
-      private Object name_ = "";
+      private java.lang.Object name_ = "";
       public boolean hasName() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       public String getName() {
-        Object ref = name_;
+        java.lang.Object ref = name_;
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           name_ = s;
@@ -6967,12 +6979,12 @@ public final class DescriptorProtos {
     private int bitField0_;
     // optional string name = 1;
     public static final int NAME_FIELD_NUMBER = 1;
-    private Object name_;
+    private java.lang.Object name_;
     public boolean hasName() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     public String getName() {
-      Object ref = name_;
+      java.lang.Object ref = name_;
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -6986,7 +6998,7 @@ public final class DescriptorProtos {
       }
     }
     private com.google.protobuf.ByteString getNameBytes() {
-      Object ref = name_;
+      java.lang.Object ref = name_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -7078,8 +7090,10 @@ public final class DescriptorProtos {
       return size;
     }
     
+    private static final long serialVersionUID = 0L;
     @java.lang.Override
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
     
@@ -7348,12 +7362,12 @@ public final class DescriptorProtos {
       private int bitField0_;
       
       // optional string name = 1;
-      private Object name_ = "";
+      private java.lang.Object name_ = "";
       public boolean hasName() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       public String getName() {
-        Object ref = name_;
+        java.lang.Object ref = name_;
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           name_ = s;
@@ -7558,12 +7572,12 @@ public final class DescriptorProtos {
     private int bitField0_;
     // optional string name = 1;
     public static final int NAME_FIELD_NUMBER = 1;
-    private Object name_;
+    private java.lang.Object name_;
     public boolean hasName() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     public String getName() {
-      Object ref = name_;
+      java.lang.Object ref = name_;
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -7577,7 +7591,7 @@ public final class DescriptorProtos {
       }
     }
     private com.google.protobuf.ByteString getNameBytes() {
-      Object ref = name_;
+      java.lang.Object ref = name_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -7686,8 +7700,10 @@ public final class DescriptorProtos {
       return size;
     }
     
+    private static final long serialVersionUID = 0L;
     @java.lang.Override
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
     
@@ -7996,12 +8012,12 @@ public final class DescriptorProtos {
       private int bitField0_;
       
       // optional string name = 1;
-      private Object name_ = "";
+      private java.lang.Object name_ = "";
       public boolean hasName() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       public String getName() {
-        Object ref = name_;
+        java.lang.Object ref = name_;
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           name_ = s;
@@ -8369,12 +8385,12 @@ public final class DescriptorProtos {
     private int bitField0_;
     // optional string name = 1;
     public static final int NAME_FIELD_NUMBER = 1;
-    private Object name_;
+    private java.lang.Object name_;
     public boolean hasName() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     public String getName() {
-      Object ref = name_;
+      java.lang.Object ref = name_;
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -8388,7 +8404,7 @@ public final class DescriptorProtos {
       }
     }
     private com.google.protobuf.ByteString getNameBytes() {
-      Object ref = name_;
+      java.lang.Object ref = name_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -8401,12 +8417,12 @@ public final class DescriptorProtos {
     
     // optional string input_type = 2;
     public static final int INPUT_TYPE_FIELD_NUMBER = 2;
-    private Object inputType_;
+    private java.lang.Object inputType_;
     public boolean hasInputType() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     public String getInputType() {
-      Object ref = inputType_;
+      java.lang.Object ref = inputType_;
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -8420,7 +8436,7 @@ public final class DescriptorProtos {
       }
     }
     private com.google.protobuf.ByteString getInputTypeBytes() {
-      Object ref = inputType_;
+      java.lang.Object ref = inputType_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -8433,12 +8449,12 @@ public final class DescriptorProtos {
     
     // optional string output_type = 3;
     public static final int OUTPUT_TYPE_FIELD_NUMBER = 3;
-    private Object outputType_;
+    private java.lang.Object outputType_;
     public boolean hasOutputType() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     public String getOutputType() {
-      Object ref = outputType_;
+      java.lang.Object ref = outputType_;
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -8452,7 +8468,7 @@ public final class DescriptorProtos {
       }
     }
     private com.google.protobuf.ByteString getOutputTypeBytes() {
-      Object ref = outputType_;
+      java.lang.Object ref = outputType_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -8542,8 +8558,10 @@ public final class DescriptorProtos {
       return size;
     }
     
+    private static final long serialVersionUID = 0L;
     @java.lang.Override
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
     
@@ -8826,12 +8844,12 @@ public final class DescriptorProtos {
       private int bitField0_;
       
       // optional string name = 1;
-      private Object name_ = "";
+      private java.lang.Object name_ = "";
       public boolean hasName() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       public String getName() {
-        Object ref = name_;
+        java.lang.Object ref = name_;
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           name_ = s;
@@ -8862,12 +8880,12 @@ public final class DescriptorProtos {
       }
       
       // optional string input_type = 2;
-      private Object inputType_ = "";
+      private java.lang.Object inputType_ = "";
       public boolean hasInputType() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       public String getInputType() {
-        Object ref = inputType_;
+        java.lang.Object ref = inputType_;
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           inputType_ = s;
@@ -8898,12 +8916,12 @@ public final class DescriptorProtos {
       }
       
       // optional string output_type = 3;
-      private Object outputType_ = "";
+      private java.lang.Object outputType_ = "";
       public boolean hasOutputType() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       public String getOutputType() {
-        Object ref = outputType_;
+        java.lang.Object ref = outputType_;
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           outputType_ = s;
@@ -9183,12 +9201,12 @@ public final class DescriptorProtos {
     private int bitField0_;
     // optional string java_package = 1;
     public static final int JAVA_PACKAGE_FIELD_NUMBER = 1;
-    private Object javaPackage_;
+    private java.lang.Object javaPackage_;
     public boolean hasJavaPackage() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     public String getJavaPackage() {
-      Object ref = javaPackage_;
+      java.lang.Object ref = javaPackage_;
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -9202,7 +9220,7 @@ public final class DescriptorProtos {
       }
     }
     private com.google.protobuf.ByteString getJavaPackageBytes() {
-      Object ref = javaPackage_;
+      java.lang.Object ref = javaPackage_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -9215,12 +9233,12 @@ public final class DescriptorProtos {
     
     // optional string java_outer_classname = 8;
     public static final int JAVA_OUTER_CLASSNAME_FIELD_NUMBER = 8;
-    private Object javaOuterClassname_;
+    private java.lang.Object javaOuterClassname_;
     public boolean hasJavaOuterClassname() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     public String getJavaOuterClassname() {
-      Object ref = javaOuterClassname_;
+      java.lang.Object ref = javaOuterClassname_;
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -9234,7 +9252,7 @@ public final class DescriptorProtos {
       }
     }
     private com.google.protobuf.ByteString getJavaOuterClassnameBytes() {
-      Object ref = javaOuterClassname_;
+      java.lang.Object ref = javaOuterClassname_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -9441,8 +9459,10 @@ public final class DescriptorProtos {
       return size;
     }
     
+    private static final long serialVersionUID = 0L;
     @java.lang.Override
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
     
@@ -9827,12 +9847,12 @@ public final class DescriptorProtos {
       private int bitField0_;
       
       // optional string java_package = 1;
-      private Object javaPackage_ = "";
+      private java.lang.Object javaPackage_ = "";
       public boolean hasJavaPackage() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       public String getJavaPackage() {
-        Object ref = javaPackage_;
+        java.lang.Object ref = javaPackage_;
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           javaPackage_ = s;
@@ -9863,12 +9883,12 @@ public final class DescriptorProtos {
       }
       
       // optional string java_outer_classname = 8;
-      private Object javaOuterClassname_ = "";
+      private java.lang.Object javaOuterClassname_ = "";
       public boolean hasJavaOuterClassname() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       public String getJavaOuterClassname() {
-        Object ref = javaOuterClassname_;
+        java.lang.Object ref = javaOuterClassname_;
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           javaOuterClassname_ = s;
@@ -10383,8 +10403,10 @@ public final class DescriptorProtos {
       return size;
     }
     
+    private static final long serialVersionUID = 0L;
     @java.lang.Override
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
     
@@ -11080,12 +11102,12 @@ public final class DescriptorProtos {
     
     // optional string experimental_map_key = 9;
     public static final int EXPERIMENTAL_MAP_KEY_FIELD_NUMBER = 9;
-    private Object experimentalMapKey_;
+    private java.lang.Object experimentalMapKey_;
     public boolean hasExperimentalMapKey() {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
     public String getExperimentalMapKey() {
-      Object ref = experimentalMapKey_;
+      java.lang.Object ref = experimentalMapKey_;
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -11099,7 +11121,7 @@ public final class DescriptorProtos {
       }
     }
     private com.google.protobuf.ByteString getExperimentalMapKeyBytes() {
-      Object ref = experimentalMapKey_;
+      java.lang.Object ref = experimentalMapKey_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -11214,8 +11236,10 @@ public final class DescriptorProtos {
       return size;
     }
     
+    private static final long serialVersionUID = 0L;
     @java.lang.Override
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
     
@@ -11610,12 +11634,12 @@ public final class DescriptorProtos {
       }
       
       // optional string experimental_map_key = 9;
-      private Object experimentalMapKey_ = "";
+      private java.lang.Object experimentalMapKey_ = "";
       public boolean hasExperimentalMapKey() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       public String getExperimentalMapKey() {
-        Object ref = experimentalMapKey_;
+        java.lang.Object ref = experimentalMapKey_;
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           experimentalMapKey_ = s;
@@ -11956,8 +11980,10 @@ public final class DescriptorProtos {
       return size;
     }
     
+    private static final long serialVersionUID = 0L;
     @java.lang.Override
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
     
@@ -12532,8 +12558,10 @@ public final class DescriptorProtos {
       return size;
     }
     
+    private static final long serialVersionUID = 0L;
     @java.lang.Override
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
     
@@ -13108,8 +13136,10 @@ public final class DescriptorProtos {
       return size;
     }
     
+    private static final long serialVersionUID = 0L;
     @java.lang.Override
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
     
@@ -13684,8 +13714,10 @@ public final class DescriptorProtos {
       return size;
     }
     
+    private static final long serialVersionUID = 0L;
     @java.lang.Override
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
     
@@ -14253,12 +14285,12 @@ public final class DescriptorProtos {
       private int bitField0_;
       // required string name_part = 1;
       public static final int NAME_PART_FIELD_NUMBER = 1;
-      private Object namePart_;
+      private java.lang.Object namePart_;
       public boolean hasNamePart() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       public String getNamePart() {
-        Object ref = namePart_;
+        java.lang.Object ref = namePart_;
         if (ref instanceof String) {
           return (String) ref;
         } else {
@@ -14272,7 +14304,7 @@ public final class DescriptorProtos {
         }
       }
       private com.google.protobuf.ByteString getNamePartBytes() {
-        Object ref = namePart_;
+        java.lang.Object ref = namePart_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -14345,8 +14377,10 @@ public final class DescriptorProtos {
         return size;
       }
       
+      private static final long serialVersionUID = 0L;
       @java.lang.Override
-      protected Object writeReplace() throws java.io.ObjectStreamException {
+      protected java.lang.Object writeReplace()
+          throws java.io.ObjectStreamException {
         return super.writeReplace();
       }
       
@@ -14590,12 +14624,12 @@ public final class DescriptorProtos {
         private int bitField0_;
         
         // required string name_part = 1;
-        private Object namePart_ = "";
+        private java.lang.Object namePart_ = "";
         public boolean hasNamePart() {
           return ((bitField0_ & 0x00000001) == 0x00000001);
         }
         public String getNamePart() {
-          Object ref = namePart_;
+          java.lang.Object ref = namePart_;
           if (!(ref instanceof String)) {
             String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
             namePart_ = s;
@@ -14681,12 +14715,12 @@ public final class DescriptorProtos {
     
     // optional string identifier_value = 3;
     public static final int IDENTIFIER_VALUE_FIELD_NUMBER = 3;
-    private Object identifierValue_;
+    private java.lang.Object identifierValue_;
     public boolean hasIdentifierValue() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     public String getIdentifierValue() {
-      Object ref = identifierValue_;
+      java.lang.Object ref = identifierValue_;
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -14700,7 +14734,7 @@ public final class DescriptorProtos {
       }
     }
     private com.google.protobuf.ByteString getIdentifierValueBytes() {
-      Object ref = identifierValue_;
+      java.lang.Object ref = identifierValue_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -14753,12 +14787,12 @@ public final class DescriptorProtos {
     
     // optional string aggregate_value = 8;
     public static final int AGGREGATE_VALUE_FIELD_NUMBER = 8;
-    private Object aggregateValue_;
+    private java.lang.Object aggregateValue_;
     public boolean hasAggregateValue() {
       return ((bitField0_ & 0x00000020) == 0x00000020);
     }
     public String getAggregateValue() {
-      Object ref = aggregateValue_;
+      java.lang.Object ref = aggregateValue_;
       if (ref instanceof String) {
         return (String) ref;
       } else {
@@ -14772,7 +14806,7 @@ public final class DescriptorProtos {
       }
     }
     private com.google.protobuf.ByteString getAggregateValueBytes() {
-      Object ref = aggregateValue_;
+      java.lang.Object ref = aggregateValue_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8((String) ref);
@@ -14873,8 +14907,10 @@ public final class DescriptorProtos {
       return size;
     }
     
+    private static final long serialVersionUID = 0L;
     @java.lang.Override
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
     
@@ -15406,12 +15442,12 @@ public final class DescriptorProtos {
       }
       
       // optional string identifier_value = 3;
-      private Object identifierValue_ = "";
+      private java.lang.Object identifierValue_ = "";
       public boolean hasIdentifierValue() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       public String getIdentifierValue() {
-        Object ref = identifierValue_;
+        java.lang.Object ref = identifierValue_;
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           identifierValue_ = s;
@@ -15529,12 +15565,12 @@ public final class DescriptorProtos {
       }
       
       // optional string aggregate_value = 8;
-      private Object aggregateValue_ = "";
+      private java.lang.Object aggregateValue_ = "";
       public boolean hasAggregateValue() {
         return ((bitField0_ & 0x00000040) == 0x00000040);
       }
       public String getAggregateValue() {
-        Object ref = aggregateValue_;
+        java.lang.Object ref = aggregateValue_;
         if (!(ref instanceof String)) {
           String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
           aggregateValue_ = s;
@@ -15759,8 +15795,10 @@ public final class DescriptorProtos {
         return size;
       }
       
+      private static final long serialVersionUID = 0L;
       @java.lang.Override
-      protected Object writeReplace() throws java.io.ObjectStreamException {
+      protected java.lang.Object writeReplace()
+          throws java.io.ObjectStreamException {
         return super.writeReplace();
       }
       
@@ -16185,8 +16223,10 @@ public final class DescriptorProtos {
       return size;
     }
     
+    private static final long serialVersionUID = 0L;
     @java.lang.Override
-    protected Object writeReplace() throws java.io.ObjectStreamException {
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
     
