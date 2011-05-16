@@ -1,8 +1,11 @@
+---
+---
 name: "Morgan A. Conbere"
 address: {
     line: "3425 19th St. Apt. 17"
     line: "San Francisco, CA 94110"
 }
+website: "http://morgan.conbere.org"
 email_address: "mconbere@gmail.com"
 phone_number: "(909) 450-3778"
 
@@ -113,7 +116,7 @@ project: {
     }
 
     note: "Designed a protobuf representation of a résumé"
-    note: "Implemented supporting tools to transform a binary or textual protobuf resume into readable Markdown or HTML"
+    note: "Implemented supporting tools to transform a binary or textual protobuf résumé into readable Markdown or HTML"
 }
 
 project: {
@@ -171,3 +174,5 @@ publication: {
     journal: "NACCQ 2007"
     url: "http://hyperdisc.unitec.ac.nz/naccq07/proceedings/papers/53.pdf"
 }
+
+formatted_url: "http://protobuf-resume.appspot.com/?url=http%3A%2F%2Fmorgan.conbere.org%2Fresume%2Fmconbere.ptxt"
