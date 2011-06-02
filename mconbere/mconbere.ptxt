@@ -38,6 +38,10 @@ employment: {
             year: 2010
             month: SEPTEMBER
         }
+        ended: {
+            year: 2011
+            month: MAY
+        }
     }
 
     note: "Engineer at 4 person software cooperative focussing on mobile development contracting."
