@@ -30,6 +30,17 @@ education: {
 }
 
 employment: {
+    company: "Google"
+    title: "Software Engineer"
+    date_range: {
+        began: {
+            year: 2011
+            month: AUGUST
+        }
+    }
+}
+
+employment: {
     company: "Plausible Labs Cooperative, Inc."
     title: "Software Engineer"
     website: "http://plausible.coop"
